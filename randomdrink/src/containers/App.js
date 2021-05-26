@@ -11,9 +11,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(response => response.json())
-    .then(data => this.setState({ drink: data.strDrink }));
+    .then(data => this.setState({ drink: data.drinks[0].strDrink
+       + " | "
+       + "Glass: " 
+       + data.drinks[0].strGlass }));
   }
 
   render() {
