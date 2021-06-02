@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Button from '../components/button';
 
 
 class App extends Component {
@@ -122,9 +123,9 @@ class App extends Component {
     const { measure15 } = this.state;
     const { image } = this.state;
     return (
-      <div className='tc f3'>
+      <div className='tc f3 bckgrnd white'>
         <div className='f1'>{drink}</div>
-        <img className='h5 pa2 b--black dib br3 ma2 grow bw2 shadow-5' src={image}/>
+        <img className='h5 pa2 b--black dib br3 ma2 grow bw2 shadow-5' alt='drink' src={image}/>
         <div>
           <h4>Type:</h4> 
           <p>{alcoholic}</p>
@@ -156,6 +157,9 @@ class App extends Component {
         <li>{ingredient14} - {measure14}</li>
         <li>{ingredient15} - {measure15}</li>
           </ul> 
+        </div>
+        <div>
+        <Button></Button>
         </div>
       </div>
     );

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.bckgrnd {
+  background-image: url(../components/bckgrnd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
