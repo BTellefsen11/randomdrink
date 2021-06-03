@@ -87,59 +87,60 @@ class App extends Component {
   }
 
   render() {
-    const { drink } = this.state;
-    const { alcoholic } = this.state;
-    const { glass } = this.state;
-    const { instructions } = this.state;
-    const { ingredient1 } = this.state;
-    const { ingredient2 } = this.state;
-    const { ingredient3 } = this.state;
-    const { ingredient4 } = this.state;
-    const { ingredient5 } = this.state;
-    const { ingredient6 } = this.state;
-    const { ingredient7 } = this.state;
-    const { ingredient8 } = this.state;
-    const { ingredient9 } = this.state;
-    const { ingredient10 } = this.state;
-    const { ingredient11 } = this.state;
-    const { ingredient12 } = this.state;
-    const { ingredient13 } = this.state;
-    const { ingredient14 } = this.state;
-    const { ingredient15 } = this.state;
-    const { measure1 } = this.state;
-    const { measure2 } = this.state;
-    const { measure3 } = this.state;
-    const { measure4 } = this.state;
-    const { measure5 } = this.state;
-    const { measure6 } = this.state;
-    const { measure7 } = this.state;
-    const { measure8 } = this.state;
-    const { measure9 } = this.state;
-    const { measure10 } = this.state;
-    const { measure11 } = this.state;
-    const { measure12 } = this.state;
-    const { measure13 } = this.state;
-    const { measure14 } = this.state;
-    const { measure15 } = this.state;
-    const { image } = this.state;
+    const { drink, 
+            alcoholic, 
+            glass,
+            instructions,
+            ingredient1,
+            ingredient2,
+            ingredient3,
+            ingredient4,
+            ingredient5,
+            ingredient6,
+            ingredient7,
+            ingredient8,
+            ingredient9,
+            ingredient10,
+            ingredient11,
+            ingredient12,
+            ingredient13,
+            ingredient14,
+            ingredient15,
+            measure1,
+            measure2,
+            measure3,
+            measure4,
+            measure5,
+            measure6,
+            measure7,
+            measure8,
+            measure9,
+            measure10,
+            measure11,
+            measure12,
+            measure13,
+            measure14,
+            measure15,
+            image
+          } = this.state;
     return (
       <div className='tc f3 bckgrnd white'>
-        <div className='f1'>{drink}</div>
+        <div className='f1 pa1 lobster'>{drink}</div>
         <img className='h5 pa2 b--black dib br3 ma2 grow bw2 shadow-5' alt='drink' src={image}/>
         <div>
-          <h4>Type:</h4> 
+          <h1 className='roboto'>Type:</h1> 
           <p>{alcoholic}</p>
         </div>
         <div>
-          <h4>Glass:</h4>
+          <h1 className='roboto'>Glass:</h1>
           <p>{glass}</p>
         </div>
         <div>
-          <h2>Instructions:</h2> 
+          <h1 className='roboto'>Instructions:</h1> 
           <p>{instructions}</p>
         </div>
         <div>
-        <h2>Ingredients:</h2>
+        <h1 className='roboto'>Ingredients:</h1>
           <ul>
         <li>{ingredient1} - {measure1}</li>
         <li>{ingredient2} - {measure2}</li>

@@ -43,3 +43,25 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+ul {
+  text-align: center;
+  list-style: inside; 
+  display: inline-block; 
+}
+
+.lobster {
+  font-family: 'Lobster';
+}
+
+.roboto {
+  font-family: 'Roboto';
+}
+
+p, li {
+  font-family: 'Poppins';
+}
+
+li {
+  text-align: left;
+}

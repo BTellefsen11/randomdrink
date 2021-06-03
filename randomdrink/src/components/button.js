@@ -8,7 +8,7 @@ function Button() {
   
   return (
     <div>
-      <button className='f3 link grow br4 ph4 pv3 mb5 dib black bg-white' onClick={refreshPage}>Nah, not feeling it!</button>
+      <button className='f3 link grow br4 ph4 pv3 mb5 dib black bg-white lobster' onClick={refreshPage}>Nah, not feeling it!</button>
     </div>
   );
 }
